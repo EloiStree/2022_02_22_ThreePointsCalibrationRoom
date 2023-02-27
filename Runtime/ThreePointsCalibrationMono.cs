@@ -43,8 +43,8 @@ public class ThreePointsCalibrationMono : MonoBehaviour
 [System.Serializable]
 public class KeyPointCalibration
 {
-    public Vector3 m_position;
-    public Quaternion m_rotation;
+    public Vector3 m_position= new Vector3();
+    public Quaternion m_rotation= Quaternion.identity;
 }
 
 

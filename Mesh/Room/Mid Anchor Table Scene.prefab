@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2841564758255622086}
   - component: {fileID: 2841564758255622081}
   m_Layer: 0
-  m_Name: Mid Anchor Scene
+  m_Name: Mid Anchor Table Scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ThreePointsRoomSingletonMono : MonoBehaviour
 {
-    public ThreePointsCalibrationEvent m_onThreePointsCalibrationChanged;
+    public ThreePointsCalibrationEvent m_onThreePointsCalibrationChanged ;
     public bool m_loadCurrentAtAwake=true;
 
     private void Awake()
@@ -33,8 +33,8 @@ public class ThreePointsRoomSingletonMono : MonoBehaviour
 }
 public class ThreePointsRoomSingleton 
 {
-    static ThreePointsCalibration m_currentthreePoints;
-    static ThreePointsCalibrationChangedDelegate m_onCalibrationChanged;
+    static ThreePointsCalibration m_currentthreePoints= new ThreePointsCalibration();
+    static ThreePointsCalibrationChangedDelegate m_onCalibrationChanged=null;
     public delegate void ThreePointsCalibrationChangedDelegate(ThreePointsCalibration newCalibration);
 
     public static ThreePointsCalibration GetCurrentRoomCalibration()
