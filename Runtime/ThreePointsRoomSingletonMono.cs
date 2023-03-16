@@ -17,6 +17,12 @@ public class ThreePointsRoomSingletonMono : MonoBehaviour
         ThreePointsRoomSingleton.SetCurrentRoomCalibration(threePointCalibration);
     }
 
+    [ContextMenu("Force repush")]
+    public void ForceRepush() {
+            NotifyChanged(ThreePointsRoomSingleton.GetCurrentRoomCalibration());
+
+
+    }
     private void OnEnable()
     {
         ThreePointsRoomSingleton.AddChangeListener(NotifyChanged);

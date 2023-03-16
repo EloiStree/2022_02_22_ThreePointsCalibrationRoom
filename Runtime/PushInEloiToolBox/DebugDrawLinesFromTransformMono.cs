@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class DebugDrawLinesMono : MonoBehaviour
+public class DebugDrawLinesFromTransformMono : MonoBehaviour
 {
 
     public Transform[] m_points;
@@ -16,4 +16,5 @@ public class DebugDrawLinesMono : MonoBehaviour
             Eloi.E_DrawingUtility.DrawLines(Time.deltaTime, m_color, points);
         }
     }
+
 }
